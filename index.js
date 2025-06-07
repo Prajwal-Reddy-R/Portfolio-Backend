@@ -9,7 +9,7 @@ const contactRoutes = require('./routes/contact');
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'https://portfolio-client-89p0mgr2t-prajwal-reddy-rs-projects.vercel.app' }));
+app.use(cors({ origin: 'https://portfolio-client-h772ydl5y-prajwal-reddy-rs-projects.vercel.app' }));
 app.use(express.json());
 
 // Connect to MongoDB
