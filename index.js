@@ -9,7 +9,7 @@ const contactRoutes = require('./routes/contact');
 const app = express();
 
 // Middleware
-app.use(cors({ origin:['https://portfolio-client-h772ydl5y-prajwal-reddy-rs-projects.vercel.app',
+app.use(cors({ origin:['https://portfolio-client-7bf70vari-prajwal-reddy-rs-projects.vercel.app',
     'http://localhost:5173'] }));
 app.use(express.json());
 
