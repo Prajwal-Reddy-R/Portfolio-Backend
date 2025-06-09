@@ -9,7 +9,8 @@ const contactRoutes = require('./routes/contact');
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'https://portfolio-client-h772ydl5y-prajwal-reddy-rs-projects.vercel.app' }));
+app.use(cors({ origin:['https://portfolio-client-h772ydl5y-prajwal-reddy-rs-projects.vercel.app',,
+    'http://localhost:5173'] }));
 app.use(express.json());
 
 // Connect to MongoDB
@@ -28,3 +29,4 @@ app.use(express.static('../client/build'));
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
